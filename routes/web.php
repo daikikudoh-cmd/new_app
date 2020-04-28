@@ -11,6 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'InstrumentsController@index');
+
+Route::resource('instruments', 'InstrumentsController');
