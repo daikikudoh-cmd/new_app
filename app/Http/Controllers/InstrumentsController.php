@@ -34,7 +34,11 @@ class InstrumentsController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $name=$request->input('name');
+        return view('instruments.index',['name'=>$name]);
+
+
+
     }
 
     /**

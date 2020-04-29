@@ -1,7 +1,15 @@
+
+
+
+    var ele = document.getElementById('js-getVariable').textContent; // HTML要素オブジェクトを取得
+    alert(ele); 
+
+
+
 const ongaq = new Ongaq ({
 	api_key: "b2f52d085245478087c08fa83c45f0ee",
 	volume: 80,
-	bpm: 120,
+	bpm: ele,
 	onReady: () => {
 
 		const button = document.getElementById("button")
@@ -119,7 +127,7 @@ my_guitar.add( new Filter ({
 
 my_guitar.add( new Filter ({
 	key:  chord_f1,
-	length: 15, //音が何拍分の長さかを示す数値または数値を返す関数。
+	length: 15, //音が何拍分の長さかを示す数値または数値を返す�����数。
 	active: (beat, measure) => beat===0 && measure === 3
 }) )
 my_guitar.add( new Filter ({
@@ -170,3 +178,5 @@ ongaq.add( my_guitar )
 // // }))
 
 // ongaq.add(my_bass)
+
+
