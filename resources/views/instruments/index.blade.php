@@ -21,13 +21,13 @@
 
 <form action="instruments" method="POST" class="form-horizontal">
   {{ csrf_field() }}
-  <input type="text" name="name"/>
+  <input type="text" name="selected_bpm"/>
   <button type="submit" name="add">
    追加
   </button>
 </form>
 
-<p id="js-getVariable">{{$name}}</p>
+<p id="selected_bpm">{{$selected_bpm}}</p>
 
 
 

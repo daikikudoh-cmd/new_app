@@ -34,8 +34,8 @@ class InstrumentsController extends Controller
      */
     public function store(Request $request)
     {
-        $name=$request->input('name');
-        return view('instruments.index',['name'=>$name]);
+        $selected_bpm=$request->input('selected_bpm');
+        return view('instruments.index',['selected_bpm'=>$selected_bpm]);
 
 
 
