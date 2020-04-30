@@ -356,6 +356,421 @@ piano3.add( new Filter ({
 }) )
 
 
+/*******************************
+*カノン進行
+*CーGーAmーEmーFーCーFーG
+********************************/
+const piano4 = new Part ({
+	sound: "plain_keyboard",
+	measure: 16, //小節
+	mute: false,
+	maxLap: 0,
+	repeat: false,
+	beatsInMeasure: 16 //小節内の拍数
+})
+
+piano4.add( new Filter ({
+	key:  C,
+	length: 15, //音が何拍分の長さかを示す数値または数値を返す関数。
+	active: (beat, measure) => beat===0 && measure === 0
+}) )
+
+piano4.add( new Filter ({
+	key:  G,
+	length: 15, //音が何拍分の長さかを示す数値または数値を返す関数。
+	active: (beat, measure) => beat===0 && measure === 1
+}) )
+
+piano4.add( new Filter ({
+	key:  Am,
+	length: 15, //音が何拍分の長さかを示す数値または数値を返す関数。
+	active: (beat, measure) => beat===0 && measure === 2
+}) )
+
+piano4.add( new Filter ({
+	key:  Em,
+	length: 15, //音が何拍分の長さかを示す数値または数値を返す�����数。
+	active: (beat, measure) => beat===0 && measure === 3
+}) )
+
+piano4.add( new Filter ({
+	key:  F,
+	length: 15, //音が何拍分の長さかを示す数値または数値を返す関数。
+	active: (beat, measure) => beat===0 && measure === 4
+}) )
+
+piano4.add( new Filter ({
+	key:  C,
+	length: 15, //音が何拍分の長さかを示す数値または数値を返す関数。
+	active: (beat, measure) => beat===0 && measure === 5
+}) )
+
+piano4.add( new Filter ({
+	key:  F,
+	length: 15, //音が何拍分の長さかを示す数値または数値を返す関数。
+	active: (beat, measure) => beat===0 && measure === 6
+}) )
+
+piano4.add( new Filter ({
+	key:  G,
+	length: 15, //音が何拍分の長さかを示す数値または数値を返す関数。
+	active: (beat, measure) => beat===0 && measure === 7
+}) )
+piano4.add( new Filter ({
+	key:  C,
+	length: 15, //音が何拍分の長さかを示す数値または数値を返す関数。
+	active: (beat, measure) => beat===0 && measure === 8
+}) )
+
+piano4.add( new Filter ({
+	key:  G,
+	length: 15, //音が何拍分の長さかを示す数値または数値を返す関数。
+	active: (beat, measure) => beat===0 && measure === 9
+}) )
+
+piano4.add( new Filter ({
+	key:  Am,
+	length: 15, //音が何拍分の長さかを示す数値または数値を返す関数。
+	active: (beat, measure) => beat===0 && measure ===10
+}) )
+
+piano4.add( new Filter ({
+	key:  Em,
+	length: 15, //音が何拍分の長さかを示す数値または数値を返す�����数。
+	active: (beat, measure) => beat===0 && measure === 11
+}) )
+
+piano4.add( new Filter ({
+	key:  F,
+	length: 15, //音が何拍分の長さかを示す数値または数値を返す関数。
+	active: (beat, measure) => beat===0 && measure === 12
+}) )
+
+piano4.add( new Filter ({
+	key:  C,
+	length: 15, //音が何拍分の長さかを示す数値または数値を返す関数。
+	active: (beat, measure) => beat===0 && measure === 13
+}) )
+
+piano4.add( new Filter ({
+	key:  F,
+	length: 15, //音が何拍分の長さかを示す数値または数値を返す関数。
+	active: (beat, measure) => beat===0 && measure === 14
+}) )
+
+piano4.add( new Filter ({
+	key:  G,
+	length: 15, //音が何拍分の長さかを示す数値または数値を返す関数。
+	active: (beat, measure) => beat===0 && measure === 15
+}) )
+
+/*******************************
+*小室進行
+*AmーFーGーC
+********************************/
+
+const piano5 = new Part ({
+	sound: "plain_keyboard",
+	measure: 8, //小節
+	mute: false,
+	maxLap: 0,
+	repeat: false,
+	beatsInMeasure: 16 //小節内の拍数
+})
+
+piano5.add( new Filter ({
+	key:  Am,
+	length: 15, //音が何拍分の長さかを示す数値または数値を返す関数。
+	active: (beat, measure) => beat===0 && measure === 0
+}) )
+
+piano5.add( new Filter ({
+	key:  F,
+	length: 15, //音が何拍分の長さかを示す数値または数値を返す関数。
+	active: (beat, measure) => beat===0 && measure === 1
+}) )
+
+piano5.add( new Filter ({
+	key:  G,
+	length: 15, //音が何拍分の長さかを示す数値または数値を返す関数。
+	active: (beat, measure) => beat===0 && measure === 2
+}) )
+
+piano5.add( new Filter ({
+	key:  C,
+	length: 15, //音が何拍分の長さかを示す数値または数値を返す�����数。
+	active: (beat, measure) => beat===0 && measure === 3
+}) )
+
+piano5.add( new Filter ({
+	key:  Am,
+	length: 15, //音が何拍分の長さかを示す数値または数値を返す関数。
+	active: (beat, measure) => beat===0 && measure === 4
+}) )
+
+piano5.add( new Filter ({
+	key:  F,
+	length: 15, //音が何拍分の長さかを示す数値または数値を返す関数。
+	active: (beat, measure) => beat===0 && measure === 5
+}) )
+
+piano5.add( new Filter ({
+	key:  G,
+	length: 15, //音が何拍分の長さかを示す数値または数値を返す関数。
+	active: (beat, measure) => beat===0 && measure === 6
+}) )
+
+piano5.add( new Filter ({
+	key:  C,
+	length: 15, //音が何拍分の長さかを示す数値または数値を返す関数。
+	active: (beat, measure) => beat===0 && measure === 7
+}) )
+
+/*******************************
+*レット・イット・ビー進行
+*CーGーAmーF
+********************************/
+const piano6 = new Part ({
+	sound: "plain_keyboard",
+	measure: 8, //小節
+	mute: false,
+	maxLap: 0,
+	repeat: false,
+	beatsInMeasure: 16 //小節内の拍数
+})
+
+piano6.add( new Filter ({
+	key:  C,
+	length: 15, //音が何拍分の長さかを示す数値または数値を返す関数。
+	active: (beat, measure) => beat===0 && measure === 0
+}) )
+
+piano6.add( new Filter ({
+	key:  G,
+	length: 15, //音が何拍分の長さかを示す数値または数値を返す関数。
+	active: (beat, measure) => beat===0 && measure === 1
+}) )
+
+piano6.add( new Filter ({
+	key:  Am,
+	length: 15, //音が何拍分の長さかを示す数値または数値を返す関数。
+	active: (beat, measure) => beat===0 && measure === 2
+}) )
+
+piano6.add( new Filter ({
+	key:  F,
+	length: 15, //音が何拍分の長さかを示す数値または数値を返す�����数。
+	active: (beat, measure) => beat===0 && measure === 3
+}) )
+
+piano6.add( new Filter ({
+	key:  C,
+	length: 15, //音が何拍分の長さかを示す数値または数値を返す関数。
+	active: (beat, measure) => beat===0 && measure === 4
+}) )
+
+piano6.add( new Filter ({
+	key:  G,
+	length: 15, //音が何拍分の長さかを示す数値または数値を返す関数。
+	active: (beat, measure) => beat===0 && measure === 5
+}) )
+
+piano6.add( new Filter ({
+	key:  Am,
+	length: 15, //音が何拍分の長さかを示す数値または数値を返す関数。
+	active: (beat, measure) => beat===0 && measure === 6
+}) )
+
+piano6.add( new Filter ({
+	key:  F,
+	length: 15, //音が何拍分の長さかを示す数値または数値を返す関数。
+	active: (beat, measure) => beat===0 && measure === 7
+}) )
+
+/*******************************
+*1625進行
+*CーAm7ーDm7ーG7
+********************************/
+const piano7 = new Part ({
+	sound: "plain_keyboard",
+	measure: 8, //小節
+	mute: false,
+	maxLap: 0,
+	repeat: false,
+	beatsInMeasure: 16 //小節内の拍数
+})
+
+piano7.add( new Filter ({
+	key:  C,
+	length: 15, //音が何拍分の長さかを示す数値または数値を返す関数。
+	active: (beat, measure) => beat===0 && measure === 0
+}) )
+
+piano7.add( new Filter ({
+	key:  Am7,
+	length: 15, //音が何拍分の長さかを示す数値または数値を返す関数。
+	active: (beat, measure) => beat===0 && measure === 1
+}) )
+
+piano7.add( new Filter ({
+	key:  Dm7,
+	length: 15, //音が何拍分の長さかを示す数値または数値を返す関数。
+	active: (beat, measure) => beat===0 && measure === 2
+}) )
+
+piano7.add( new Filter ({
+	key:  G7,
+	length: 15, //音が何拍分の長さかを示す数値または数値を返す�����数。
+	active: (beat, measure) => beat===0 && measure === 3
+}) )
+
+piano7.add( new Filter ({
+	key:  C,
+	length: 15, //音が何拍分の長さかを示す数値または数値を返す関数。
+	active: (beat, measure) => beat===0 && measure === 4
+}) )
+
+piano7.add( new Filter ({
+	key:  Am7,
+	length: 15, //音が何拍分の長さかを示す数値または数値を返す関数。
+	active: (beat, measure) => beat===0 && measure === 5
+}) )
+
+piano7.add( new Filter ({
+	key:  Dm7,
+	length: 15, //音が何拍分の長さかを示す数値または数値を返す関数。
+	active: (beat, measure) => beat===0 && measure === 6
+}) )
+
+piano7.add( new Filter ({
+	key:  G7,
+	length: 15, //音が何拍分の長さかを示す数値または数値を返す関数。
+	active: (beat, measure) => beat===0 && measure === 7
+}) )
+/*******************************
+*6415進行
+*AmーFーCーG
+********************************/
+const piano8 = new Part ({
+	sound: "plain_keyboard",
+	measure: 8, //小節
+	mute: false,
+	maxLap: 0,
+	repeat: false,
+	beatsInMeasure: 16 //小節内の拍数
+})
+
+piano8.add( new Filter ({
+	key:  Am,
+	length: 15, //音が何拍分の長さかを示す数値または数値を返す関数。
+	active: (beat, measure) => beat===0 && measure === 0
+}) )
+
+piano8.add( new Filter ({
+	key:  F,
+	length: 15, //音が何拍分の長さかを示す数値または数値を返す関数。
+	active: (beat, measure) => beat===0 && measure === 1
+}) )
+
+piano8.add( new Filter ({
+	key:  C,
+	length: 15, //音が何拍分の長さかを示す数値または数値を返す関数。
+	active: (beat, measure) => beat===0 && measure === 2
+}) )
+
+piano8.add( new Filter ({
+	key:  G,
+	length: 15, //音が何拍分の長さかを示す数値または数値を返す�����数。
+	active: (beat, measure) => beat===0 && measure === 3
+}) )
+
+piano8.add( new Filter ({
+	key:  Am,
+	length: 15, //音が何拍分の長さかを示す数値または数値を返す関数。
+	active: (beat, measure) => beat===0 && measure === 4
+}) )
+
+piano8.add( new Filter ({
+	key:  F,
+	length: 15, //音が何拍分の長さかを示す数値または数値を返す関数。
+	active: (beat, measure) => beat===0 && measure === 5
+}) )
+
+piano8.add( new Filter ({
+	key:  C,
+	length: 15, //音が何拍分の長さかを示す数値または数値を返す関数。
+	active: (beat, measure) => beat===0 && measure === 6
+}) )
+
+piano8.add( new Filter ({
+	key:  G,
+	length: 15, //音が何拍分の長さかを示す数値または数値を返す関数。
+	active: (beat, measure) => beat===0 && measure === 7
+}) )
+
+/*******************************
+*3456進行
+*EmーFーGーAm
+********************************/
+const piano9 = new Part ({
+	sound: "plain_keyboard",
+	measure: 8, //小節
+	mute: false,
+	maxLap: 0,
+	repeat: false,
+	beatsInMeasure: 16 //小節内の拍数
+})
+
+piano9.add( new Filter ({
+	key:  Em,
+	length: 15, //音が何拍分の長さかを示す数値または数値を返す関数。
+	active: (beat, measure) => beat===0 && measure === 0
+}) )
+
+piano9.add( new Filter ({
+	key:  F,
+	length: 15, //音が何拍分の長さかを示す数値または数値を返す関数。
+	active: (beat, measure) => beat===0 && measure === 1
+}) )
+
+piano9.add( new Filter ({
+	key:  G,
+	length: 15, //音が何拍分の長さかを示す数値または数値を返す関数。
+	active: (beat, measure) => beat===0 && measure === 2
+}) )
+
+piano9.add( new Filter ({
+	key:  Am,
+	length: 15, //音が何拍分の長さかを示す数値または数値を返す�����数。
+	active: (beat, measure) => beat===0 && measure === 3
+}) )
+
+piano9.add( new Filter ({
+	key:  Em,
+	length: 15, //音が何拍分の長さかを示す数値または数値を返す関数。
+	active: (beat, measure) => beat===0 && measure === 4
+}) )
+
+piano9.add( new Filter ({
+	key:  F,
+	length: 15, //音が何拍分の長さかを示す数値または数値を返す関数。
+	active: (beat, measure) => beat===0 && measure === 5
+}) )
+
+piano9.add( new Filter ({
+	key:  G,
+	length: 15, //音が何拍分の長さかを示す数値または数値を返す関数。
+	active: (beat, measure) => beat===0 && measure === 6
+}) )
+
+piano9.add( new Filter ({
+	key:  Am,
+	length: 15, //音が何拍分の長さかを示す数値または数値を返す関数。
+	active: (beat, measure) => beat===0 && measure === 7
+}) )
+
+
+
 var selected_Chord = document.getElementById('selected_Chord').innerText; 
 
 console.log(selected_Chord);
@@ -364,8 +779,21 @@ if (selected_Chord == "piano1") {
 ongaq.add(piano1);
 } else if (selected_Chord == "piano2") {
 ongaq.add(piano2);
-} else {
+} else if (selected_Chord == "piano3") {
 ongaq.add(piano3);
+} else if (selected_Chord == "piano4") {
+ongaq.add(piano4);
+} else if (selected_Chord == "piano5") {
+ongaq.add(piano5);
+} else if (selected_Chord == "piano6") {
+ongaq.add(piano6);
+} else if (selected_Chord == "piano7") {
+ongaq.add(piano7);
+} else if (selected_Chord == "piano8") {
+ongaq.add(piano8);
+} 
+else {
+ongaq.add(piano9);
 }
 
 
@@ -391,83 +819,83 @@ ongaq.add(piano3);
 
 // var random = Math.floor( Math.random() * 5 );
 
-function random(array, num) {
-  var a = array;
-  var t = [];
-  var r = [];
-  var l = a.length;
-  var n = num < l ? num : l;
-  while (n-- > 0) {
-    var i = Math.random() * l | 0;
-    r[n] = t[i] || a[i];
-    --l;
-    t[i] = t[l] || a[l];
-  }
-  return r;
-}
+// function random(array, num) {
+//   var a = array;
+//   var t = [];
+//   var r = [];
+//   var l = a.length;
+//   var n = num < l ? num : l;
+//   while (n-- > 0) {
+//     var i = Math.random() * l | 0;
+//     r[n] = t[i] || a[i];
+//     --l;
+//     t[i] = t[l] || a[l];
+//   }
+//   return r;
+// }
 
-var measure_array = [0, 1, 2, 3, 0, 1, 2, 3];
-var random_measure=random(measure_array, 7);
+// var measure_array = [0, 1, 2, 3, 0, 1, 2, 3];
+// var random_measure=random(measure_array, 7);
 
-var beat_array = [0,4,8,0,4,8,0,4];
-var random_beat=random(beat_array, 7);
-
-
-
-// const guitar = new Part ({
-// 	sound: "rock_guitar",
-// 	measure: 8, //小節
-// 	mute: false,
-// 	maxLap: 0,
-// 	repeat: false,
-// 	beatsInMeasure: 16 //小節内の拍数
-// })
-
-// guitar.add( new Filter ({
-// 	key: "C2",
-// 	length: 4,
-// 	active: (beat, measure) => beat === random_beat[0] && measure === random_measure[0] //0小節の0拍目
-// }) )
-
-// guitar.add( new Filter ({
-// 	key: "D2",
-// 	length: 4,
-// 	active: (beat, measure) => beat === random_beat[1] && measure === random_measure[1]
-// }) )
-
-// guitar.add( new Filter ({
-// 	key: "E2",
-// 	length: 4,
-// 	active: (beat, measure) => beat === random_beat[2] && measure === random_measure[2]
-// }) )
-
-// guitar.add( new Filter ({
-// 	key: "F2",
-// 	length: 4,
-// 	active: (beat, measure) => beat === random_beat[3] && measure === random_measure[3]
-// }) )
-
-// guitar.add( new Filter ({
-// 	key: "E2",
-// 	length: 4,
-// 	active: (beat, measure) => beat === random_beat[4] && measure === random_measure[4]
-// }) )
-
-// guitar.add( new Filter ({
-// 	key: "D2",
-// 	length: 4,
-// 	active: (beat, measure) => beat === random_beat[5] && measure === random_measure[5]
-// }) )
-
-// guitar.add( new Filter ({
-// 	key: "C2",
-// 	length: 4,
-// 	active: (beat, measure) => beat === random_beat[6] && measure === random_measure[6]
-// }) )
+// var beat_array = [0,4,8,0,4,8,0,4];
+// var random_beat=random(beat_array, 7);
 
 
 
-// ongaq.add( guitar )
+const guitar = new Part ({
+	sound: "rock_guitar",
+	measure: 8, //小節
+	mute: false,
+	maxLap: 0,
+	repeat: false,
+	beatsInMeasure: 16 //小節内の拍数
+})
+
+guitar.add( new Filter ({
+	key: "C2",
+	length: 4,
+	active: (beat, measure) => beat === 0 && measure === 0 //0小節の0拍目
+}) )
+
+guitar.add( new Filter ({
+	key: "D2",
+	length: 4,
+	active: (beat, measure) => beat === 8 && measure === 0
+}) )
+
+guitar.add( new Filter ({
+	key: "E2",
+	length: 4,
+	active: (beat, measure) => beat === 0 && measure === 1
+}) )
+
+guitar.add( new Filter ({
+	key: "F2",
+	length: 4,
+	active: (beat, measure) => beat === 8 && measure === 1
+}) )
+
+guitar.add( new Filter ({
+	key: "E2",
+	length: 4,
+	active: (beat, measure) => beat === 0 && measure === 2
+}) )
+
+guitar.add( new Filter ({
+	key: "D2",
+	length: 4,
+	active: (beat, measure) => beat === 8 && measure === 2
+}) )
+
+guitar.add( new Filter ({
+	key: "C2",
+	length: 4,
+	active: (beat, measure) => beat === 0 && measure === 3
+}) )
+
+
+
+ongaq.add( guitar )
 
 
 
