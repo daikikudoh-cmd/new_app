@@ -59,7 +59,6 @@
   <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios9" value="piano9">
   <label class="form-check-label" for="exampleRadios9">3456進行</label>
 </div>
-
   <button type="submit" name="add">
    追加
   </button>

@@ -801,6 +801,69 @@ ongaq.add(piano9);
 
 
 
+1) Diatonic major scale
+
+1) Natural minor scale
+C D D#(E♭) F G G#(A♭) A#(B♭)
+
+2) Harmonic minor scale
+C D D#(E♭) F G G#(A♭) B
+　
+3) Melodic minor scale
+
+
+1) Ionian scale
+
+
+2) Dorian scale
+
+
+3) Phrygian scale
+
+
+4) Lydian scale
+
+
+5) Mixolydian scale
+
+
+6) Aeolian scale
+
+
+7) Locrian scale
+
+
+1) Lydian ♭7th scale
+
+
+2) Altered scale
+
+
+3) Harmonic minor scale P5th below
+
+
+1) Major pentatonic scale
+
+
+minor pentatonic scale
+
+
+2) Blue note pentatonic scale
+
+
+3) Blue note scale
+
+
+4) Altered Dorian scale
+
+
+5) Combination of diminished scale
+
+
+6) Whole tone scale
+
+
+7) Diminished scale
 
 
 
