@@ -13,7 +13,12 @@ class InstrumentsController extends Controller
      */
     public function index()
     {
-        return view('instruments.index');
+        $selected_bpm="";
+        $selected_Chord="";
+        return view('instruments.index',[
+            'selected_bpm'=>$selected_bpm,
+            'selected_Chord'=>$selected_Chord,
+            ]);
     }
 
     /**
@@ -35,7 +40,10 @@ class InstrumentsController extends Controller
     public function store(Request $request)
     {
         $selected_bpm=$request->input('selected_bpm');
-        return view('instruments.index',['selected_bpm'=>$selected_bpm]);
+        $selected_Chord=$request->input('exampleRadios');
+        return view('instruments.index',['selected_bpm'=>$selected_bpm,
+            'selected_Chord'=>$selected_Chord,
+        ]);
 
 
 
