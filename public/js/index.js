@@ -67,8 +67,10 @@ ongaq.add(my_drums)
 
 
 
-
-
+/*******************************
+*コード
+*
+********************************/
 
 const C =new Chord("C",{octave :2})
 const D =new Chord("D",{octave :2})
@@ -167,6 +169,53 @@ const Am9 =new Chord("Am9",{octave :2})
 const Bm9 =new Chord("Bm9",{octave :2})
 
 
+/*******************************
+*構成音
+*
+********************************/
+
+const C_composition =['C2','E2','G2',]
+const Cm_composition =['C2','D2#','G2',]
+const Caug_composition =['C2','E2','G2#',]
+const C7_composition =['C2','E2','G2','A2#']
+const CM7_composition =['C2','E2','G2','B2']
+const Cm7_composition =['C2','D2#','G2','A2#']
+const D_composition =['D2','F2#','A2',]
+const Dm_composition =['D2','F2','A2',]
+const Daug_composition =['D2','F2#','A2#',]
+const D7_composition =['D2','F2#','A2','C2']
+const DM7_composition =['D2','F2#','A2','C2#']
+const Dm7_composition =['D2','F2','A2','C2']
+const E_composition =['E2','G2#','B2',]
+const Em_composition =['E2','G2','B2',]
+const Eaug_composition =['E2','G2#','C2',]
+const E7_composition =['E2','G2#','B2','D2']
+const EM7_composition =['E2','G2#','B2','D2#']
+const Em7_composition =['E2','G2','B2','D2']
+const F_composition =['F2','A2','C2',]
+const Fm_composition =['F2','G2#','C2',]
+const Faug_composition =['F2','A2','C2#',]
+const F7_composition =['F2','A2','C2','D2#']
+const FM7_composition =['F2','A2','C2','E2']
+const Fm7_composition =['F2','G2#','C2','D2#']
+const G_composition =['G2','B2','D2',]
+const Gm_composition =['G2','A2#','D2',]
+const Gaug_composition =['G2','B2','D2#',]
+const G7_composition =['G2','B2','D2','F2']
+const GM7_composition =['G2','B2','D2','F2#']
+const Gm7_composition =['G2','A2#','D2','F2']
+const A_composition =['A2','C2#','E2',]
+const Am_composition =['A2','C2','E2',]
+const Aaug_composition =['A2','C2#','F2',]
+const A7_composition =['A2','C2#','E2','G2']
+const AM7_composition =['A2','C2#','E2','G2#']
+const Am7_composition =['A2','C2','E2','G2']
+const B_composition =['B2','D2#','F2#',]
+const Bm_composition =['B2','D2','F2#',]
+const Baug_composition =['B2','D2#','G2',]
+const B7_composition =['B2','D2#','F2#','A2']
+const BM7_composition =['B2','D2#','F2#','A2#']
+const Bm7_composition =['B2','D2','F2#','A2']
 
 /*******************************
 *王道
@@ -174,7 +223,7 @@ const Bm9 =new Chord("Bm9",{octave :2})
 ********************************/
 
 const piano1 = new Part ({
-	sound: "plain_keyboard",
+	sound: "rock_guitar",
 	measure: 8, //小節
 	mute: false,
 	maxLap: 0,
@@ -236,7 +285,7 @@ piano1.add( new Filter ({
 *FM7ーE7ーAm7ーC7
 ********************************/
 const piano2 = new Part ({
-	sound: "plain_keyboard",
+	sound: "rock_guitar",
 	measure: 8, //小節
 	mute: false,
 	maxLap: 0,
@@ -299,7 +348,7 @@ piano2.add( new Filter ({
 ********************************/
 
 const piano3 = new Part ({
-	sound: "plain_keyboard",
+	sound: "rock_guitar",
 	measure: 8, //小節
 	mute: false,
 	maxLap: 0,
@@ -361,7 +410,7 @@ piano3.add( new Filter ({
 *CーGーAmーEmーFーCーFーG
 ********************************/
 const piano4 = new Part ({
-	sound: "plain_keyboard",
+	sound: "rock_guitar",
 	measure: 16, //小節
 	mute: false,
 	maxLap: 0,
@@ -470,7 +519,7 @@ piano4.add( new Filter ({
 ********************************/
 
 const piano5 = new Part ({
-	sound: "plain_keyboard",
+	sound: "rock_guitar",
 	measure: 8, //小節
 	mute: false,
 	maxLap: 0,
@@ -531,7 +580,7 @@ piano5.add( new Filter ({
 *CーGーAmーF
 ********************************/
 const piano6 = new Part ({
-	sound: "plain_keyboard",
+	sound: "rock_guitar",
 	measure: 8, //小節
 	mute: false,
 	maxLap: 0,
@@ -592,7 +641,7 @@ piano6.add( new Filter ({
 *CーAm7ーDm7ーG7
 ********************************/
 const piano7 = new Part ({
-	sound: "plain_keyboard",
+	sound: "rock_guitar",
 	measure: 8, //小節
 	mute: false,
 	maxLap: 0,
@@ -652,7 +701,7 @@ piano7.add( new Filter ({
 *AmーFーCーG
 ********************************/
 const piano8 = new Part ({
-	sound: "plain_keyboard",
+	sound: "rock_guitar",
 	measure: 8, //小節
 	mute: false,
 	maxLap: 0,
@@ -713,7 +762,7 @@ piano8.add( new Filter ({
 *EmーFーGーAm
 ********************************/
 const piano9 = new Part ({
-	sound: "plain_keyboard",
+	sound: "rock_guitar",
 	measure: 8, //小節
 	mute: false,
 	maxLap: 0,
@@ -801,71 +850,125 @@ ongaq.add(piano9);
 
 
 
-1) Diatonic major scale
 
-1) Natural minor scale
-C D D#(E♭) F G G#(A♭) A#(B♭)
+var major_scale = ["C2", "D2", "E2", "F2", "G2", "A2", "B2"];
 
-2) Harmonic minor scale
-C D D#(E♭) F G G#(A♭) B
-　
-3) Melodic minor scale
+// 1) natural_minor_scale
+// C D D#(E♭) F G G#(A♭) A#(B♭)
+var natural_minor_scale = ["C2", "D2", "D2#", "F2", "G2", "G2#", "A2#"];
 
+// 2) Harmonic minor scale
+// C D D#(E♭) F G G#(A♭) B
+var harmonic_minor_scale = ["C2", "D2", "D2#", "F2", "G2", "G2#", "B2"];
 
-1) Ionian scale
-
-
-2) Dorian scale
-
-
-3) Phrygian scale
+// 3) Melodic minor scale
+// C D D#(E♭) F G A B
+var melodic_minor_scale = ["C2", "D2", "D2#", "F2", "G2", "A2", "B2"];
 
 
-4) Lydian scale
+// // 2) Dorian scale
+// // C D D#(E♭) F G A A#(B♭)
+// var natural_minor_scale = ["C", "D", "D#(E♭)", "F", "G", "A", "A#(B♭)"];
 
 
-5) Mixolydian scale
+// // 3) Phrygian scale
+// // C C#(D♭) D#(E♭) F G G#(A♭) A#(B♭)
+// var natural_minor_scale = ["C", "C#(D♭)", "D#(E♭)", "F", "G", "G#(A♭)", "A#(B♭)"];
 
 
-6) Aeolian scale
+// // 4) Lydian scale
+// // C D E F#(G♭) G A B
+// var natural_minor_scale = ["C", "D", "E", "F#(G♭)", "G", "A", "B"];
 
 
-7) Locrian scale
+// // 5) Mixolydian scale
+// // C D E F G A A#(B♭)
+// var natural_minor_scale = ["C", "D", "E", "F", "G", "A", "A#(B♭)"];
 
 
-1) Lydian ♭7th scale
+// // 6) Aeolian scale
+// // C D D#(E♭) F G G#(A♭) A#(B♭)
+// var natural_minor_scale = ["C", "D", "D#(E♭)", "F", "G", "G#(A♭)", "A#(B♭)"];
 
 
-2) Altered scale
+// // 7) Locrian scale
+// // C C#(D♭) D#(E♭) F F#(G♭) G#(A♭) A#(B♭)
+// var natural_minor_scale = ["C", "C#(D♭)", "D#(E♭)", "F", "F#(G♭)", "G#(A♭)", "A#(B♭)"];
 
 
-3) Harmonic minor scale P5th below
+// // 1) Lydian ♭7th scale
+// // C D E F#(G♭) G A A#(B♭)
+// var natural_minor_scale = ["C", "D", "E", "F#(G♭)", "G", "A", "A#(B♭)"];
 
 
-1) Major pentatonic scale
+// // 2) Altered scale
+// // C C#(D♭) D#(E♭) E F#(G♭) G#(A♭) A#(B♭)
+// var natural_minor_scale = ["C", "C#(D♭)", "D#(E♭)", "E", "F#(G♭)", "G#(A♭)", "A#(B♭)"];
 
 
-minor pentatonic scale
+// // 1) Major pentatonic scale
+// // C D E G A
+// var natural_minor_scale = ["C", "D", "E", "G", "A"];
 
 
-2) Blue note pentatonic scale
+// // minor pentatonic scale
+// // C D#(E♭) F G A#(B♭)
+// var natural_minor_scale = ["C", "D#(E♭)", "F", "G", "A#(B♭)"];
 
 
-3) Blue note scale
+// // 2) blues scale
+// // C D D#(E♭) E F F#(G♭) G A A#(B♭)
+// var natural_minor_scale = ["C", "D", "D#(E♭)", "E", "F", "F#(G♭)", "G", "A", "A#(B♭)"];
 
 
-4) Altered Dorian scale
+// // 3) Minor blues scale
+// // C D#(E♭) F F#(G♭) G A#(B♭)
+// var natural_minor_scale = ["C", "D#(E♭)", "F", "F#(G♭)", "G", "A#(B♭)"];
 
 
-5) Combination of diminished scale
+// // 6) spanish 8note
+// // C C#(D♭) D#(E♭) E F G G#(A♭) A#(B♭)
+// var natural_minor_scale = ["C", "C#(D♭)", "D#(E♭)", "E", "F", "G", "G#(A♭)", "A#(B♭)"];
 
 
-6) Whole tone scale
+// // 7) Diminished scale
+// // C D D#(E♭) F F#(G♭) G#(A♭) A B
+// var natural_minor_scale = ["C", "D", "D#(E♭)", "F", "F#(G♭)", "G#(A♭)", "A", "B"];
 
 
-7) Diminished scale
+// // 8)arabic scale
+// // C C#(D♭) E F G G#(A♭) B
+// var natural_minor_scale = ["C", "C#(D♭)", "E", "F", "G", "G#(A♭)", "B"];
 
 
+// // 9)hungarian major
+// // C D#(E♭) E F#(G♭) G A A#(B♭)
+// var natural_minor_scale = ["C", "D#(E♭)", "E", "F#(G♭)", "G", "A", "A#(B♭)"];
+
+
+// // 10)hungarian minor
+// // C D D#(E♭) F#(G♭) G G#(A♭) B
+// var natural_minor_scale = ["C", "D", "D#(E♭)", "F#(G♭)", "G", "G#(A♭)", "B"];
+
+
+// // 11)Hindu scale
+// // C D E F G G#(A♭) A#(B♭)
+// var natural_minor_scale = ["C", "D", "E", "F", "G", "G#(A♭)", "A#(B♭)"];
+
+
+// // 12)yona nuki major
+// // C D E G A
+// var natural_minor_scale = ["C", "D", "E", "G", "A"];
+
+
+// // 13)yona nuki minor
+// // C D D#(E♭) G G#(A♭)
+// var natural_minor_scale = ["C", "D", "D#(E♭)", "G", "G#(A♭)"];
+
+
+// // 14)Ryukyu Scale
+// // C E F G B
+// var natural_minor_scale = ["C", "E", "F", "G", "B"];
 
 
 
@@ -882,26 +985,30 @@ minor pentatonic scale
 
 // var random = Math.floor( Math.random() * 5 );
 
-// function random(array, num) {
-//   var a = array;
-//   var t = [];
-//   var r = [];
-//   var l = a.length;
-//   var n = num < l ? num : l;
-//   while (n-- > 0) {
-//     var i = Math.random() * l | 0;
-//     r[n] = t[i] || a[i];
-//     --l;
-//     t[i] = t[l] || a[l];
-//   }
-//   return r;
-// }
+function random(array, num) {
+  var a = array;
+  var t = [];
+  var r = [];
+  var l = a.length;
+  var n = num < l ? num : l;
+  while (n-- > 0) {
+    var i = Math.random() * l | 0;
+    r[n] = t[i] || a[i];
+    --l;
+    t[i] = t[l] || a[l];
+  }
+  return r;
+}
 
 // var measure_array = [0, 1, 2, 3, 0, 1, 2, 3];
 // var random_measure=random(measure_array, 7);
 
 // var beat_array = [0,4,8,0,4,8,0,4];
 // var random_beat=random(beat_array, 7);
+
+var scale_array = [0,1,2,3,4,5,6,7];
+var random_scale=random(scale_array, 7);
+alert(random_scale); 
 
 
 
@@ -915,27 +1022,51 @@ const guitar = new Part ({
 })
 
 guitar.add( new Filter ({
-	key: "C2",
+	key: "A2",
 	length: 4,
 	active: (beat, measure) => beat === 0 && measure === 0 //0小節の0拍目
 }) )
 
 guitar.add( new Filter ({
-	key: "D2",
+	key: "C3",
 	length: 4,
-	active: (beat, measure) => beat === 8 && measure === 0
-}) )
-
-guitar.add( new Filter ({
-	key: "E2",
-	length: 4,
-	active: (beat, measure) => beat === 0 && measure === 1
+	active: (beat, measure) => beat === 4 && measure === 0
 }) )
 
 guitar.add( new Filter ({
 	key: "F2",
 	length: 4,
+	active: (beat, measure) => beat === 8 && measure === 0
+}) )
+
+guitar.add( new Filter ({
+	key: "C3",
+	length: 4,
+	active: (beat, measure) => beat === 12 && measure === 0
+}) )
+
+guitar.add( new Filter ({
+	key: "G2",
+	length: 4,
+	active: (beat, measure) => beat === 0 && measure === 1
+}) )
+
+guitar.add( new Filter ({
+	key: "D3",
+	length: 4,
+	active: (beat, measure) => beat === 4 && measure === 1
+}) )
+
+guitar.add( new Filter ({
+	key: "B3",
+	length: 4,
 	active: (beat, measure) => beat === 8 && measure === 1
+}) )
+
+guitar.add( new Filter ({
+	key: "G2",
+	length: 4,
+	active: (beat, measure) => beat === 12 && measure === 1
 }) )
 
 guitar.add( new Filter ({
@@ -945,15 +1076,63 @@ guitar.add( new Filter ({
 }) )
 
 guitar.add( new Filter ({
-	key: "D2",
+	key: "G2",
+	length: 4,
+	active: (beat, measure) => beat === 4 && measure === 2 //0小節の0拍目
+}) )
+
+guitar.add( new Filter ({
+	key: "B2",
 	length: 4,
 	active: (beat, measure) => beat === 8 && measure === 2
 }) )
 
 guitar.add( new Filter ({
-	key: "C2",
+	key: "B2",
+	length: 4,
+	active: (beat, measure) => beat === 12 && measure === 2
+}) )
+
+guitar.add( new Filter ({
+	key: "A2",
 	length: 4,
 	active: (beat, measure) => beat === 0 && measure === 3
+}) )
+
+guitar.add( new Filter ({
+	key: "E2",
+	length: 4,
+	active: (beat, measure) => beat === 4 && measure === 3
+}) )
+
+guitar.add( new Filter ({
+	key: "C2",
+	length: 4,
+	active: (beat, measure) => beat === 8 && measure === 3
+}) )
+
+guitar.add( new Filter ({
+	key: "C2",
+	length: 4,
+	active: (beat, measure) => beat === 12 && measure === 3
+}) )
+
+guitar.add( new Filter ({
+	key: natural_minor_scale[1],
+	length: 4,
+	active: (beat, measure) => beat === 0 && measure === 4
+}) )
+
+guitar.add( new Filter ({
+	key: natural_minor_scale[1],
+	length: 4,
+	active: (beat, measure) => beat === 4 && measure === 4
+}) )
+
+guitar.add( new Filter ({
+	key: natural_minor_scale[4],
+	length: 4,
+	active: (beat, measure) => beat === 8 && measure === 4
 }) )
 
 
