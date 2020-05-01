@@ -975,14 +975,6 @@ var melodic_minor_scale = ["C2", "D2", "D2#", "F2", "G2", "A2", "B2"];
 
 
 
-
-
-
-
-
-
-
-
 // var random = Math.floor( Math.random() * 5 );
 
 function random(array, num) {
@@ -1137,7 +1129,7 @@ guitar.add( new Filter ({
 
 
 
-ongaq.add( guitar )
+// ongaq.add( guitar )
 
 
 
