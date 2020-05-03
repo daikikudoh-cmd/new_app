@@ -6,7 +6,7 @@ body {
     padding: 0;
     width: 100%;
     height: 100%;
-    background: #f9f8e9;
+    /*background: #f9f8e9;*/
     background-image: url("./wall.png");
 }
 main {
@@ -85,4 +85,53 @@ footer a {
 }
 p {
     margin: 0;
+}
+
+
+
+
+
+.jumbotron{
+    background-image: url("../images/jumbotron.jpg");
+    margin-bottom:150px;
+  object-fit: cover; /* この一行を追加するだけ！ */
+;}
+
+.bpm{
+    width:300px;
+}
+
+.bpm lavel{
+    font-weight:bold;
+    display:block;
+    text-align:center;
+}
+
+.bpm .bpm_input{
+    text-align:center;
+}
+
+.select_all{
+  display: flex;
+  justify-content: space-between; /* live sample で変更可能 */
+}
+
+select.form-control[size]{    
+    height:calc(2.25rem + 2px);
+}
+
+
+select.form-control[size]{    
+    height:calc(2.25rem + 2px);
+}
+
+
+form{
+    margin-bottom:150px;
+}
+
+.btn{
+    display:block;
+    margin:0 auto;
+    margin-top:150px;
 }

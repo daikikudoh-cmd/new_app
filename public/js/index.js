@@ -1,6 +1,6 @@
 var selected_bpm = document.getElementById('selected_bpm').textContent; 
 
-alert(selected_bpm); 
+// alert(selected_bpm); 
 
 
 
@@ -1000,7 +1000,7 @@ function random(array, num) {
 
 var scale_array = [0,1,2,3,4,5,6,7];
 var random_scale=random(scale_array, 7);
-alert(random_scale); 
+// alert(random_scale); 
 
 
 
@@ -1144,3 +1144,20 @@ guitar.add( new Filter ({
 
 // exprIfFalse
 // condition が falsy の値 (false と等しいか、 false に変換できる値) と評価された場合に評価される式です。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
