@@ -130,8 +130,31 @@ form{
     margin-bottom:150px;
 }
 
-.btn{
+.btn-secondary{
     display:block;
     margin:0 auto;
     margin-top:150px;
 }
+
+.w-75{
+    text-align:center;
+}
+.card{
+    margin:0 auto;
+    margin-bottom:30px;
+}
+
+.card-body{
+    display:flex;
+    justify-content:space-around;
+    font-weight:bold;
+}
+
+.card-body p{
+    margin-top:20px;
+}
+
+.card-body div span{
+    margin-top:30px;
+}
+

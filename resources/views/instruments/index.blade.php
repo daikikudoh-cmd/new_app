@@ -138,13 +138,6 @@
   
   
   
-  
-  
-  
-  
-  
-  
-  
 </div>
 
 
@@ -158,12 +151,12 @@
 
 
 
-    <main>
-        <h1>Ongaq JS Sample</h1>
-        <ul>
-            <li><a id="button" class="button" href="javascript:;"></a></li>
-        </ul>
-    </main>
+    <!--<main>-->
+    <!--    <h1>Ongaq JS Sample</h1>-->
+    <!--    <ul>-->
+    <!--        <li><a id="button" class="button" href="javascript:;"></a></li>-->
+    <!--    </ul>-->
+    <!--</main>-->
     
     
 
@@ -173,23 +166,91 @@
 
 
 <p id="selected_bpm">
-    <?php
-    print $selected_bpm==NULL ? 120 : $selected_bpm
-    ?>
+    <?#phpprint $selected_bpm==NULL ? 120 : $selected_bpm?>
     </p>
     
 <p id="selected_Chord">
-    <?php
-    print $selected_Chord==NULL ? "piano1" : $selected_Chord
-    ?>
+    <?#phpprint $selected_Chord==NULL ? "piano1" : $selected_Chord?>
     </p>
 
 
 
+<div class="container">
+  <h4>投稿一覧</h4>
+  <hr>
+  
+    <div class="card w-75">
+      <div class="card-body">
+        <div>
+          <p>コード</p>
+          <p>Fm - C - Em - A</p>
+          </div>
+        <div>
+          <p>スケール</p>
+          <p>minor pentatonic scale</p>
+        </div>
+        <div>
+          <p>BPM</p>
+          <p>120</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="card w-75">
+      <div class="card-body">
+        <div>
+          <p>コード</p>
+          <p>Fm - C - Em - A</p>
+          </div>
+        <div>
+          <p>スケール</p>
+          <p>minor pentatonic scale</p>
+        </div>
+        <div>
+          <p>BPM</p>
+          <p>120</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="card w-75">
+      <div class="card-body">
+        <div>
+          <p>コード</p>
+          <p>Fm - C - Em - A</p>
+          </div>
+        <div>
+          <p>スケール</p>
+          <p>minor pentatonic scale</p>
+        </div>
+        <div>
+          <p>BPM</p>
+          <p>120</p>
+        </div>
+      </div>
+    </div>
+  
+  
+</div>
 
 
 
 
+
+
+<!--<div class="card text-center">-->
+<!--  <div class="card-header">-->
+<!--    Featured-->
+<!--  </div>-->
+<!--  <div class="card-body">-->
+<!--    <h5 class="card-title">Special title treatment</h5>-->
+<!--    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>-->
+<!--    <a href="#" class="btn btn-primary">Go somewhere</a>-->
+<!--  </div>-->
+<!--  <div class="card-footer text-muted">-->
+<!--    2 days ago-->
+<!--  </div>-->
+<!--</div>-->
 
 
 
