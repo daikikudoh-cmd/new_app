@@ -20,6 +20,16 @@ class InstrumentsController extends Controller
             'selected_Chord'=>$selected_Chord,
             ]);
     }
+    
+    public function generate()
+    {
+        $selected_bpm="";
+        $selected_Chord="";
+        return view('instruments.generate',[
+            'selected_bpm'=>$selected_bpm,
+            'selected_Chord'=>$selected_Chord,
+            ]);
+    }
 
     /**
      * Show the form for creating a new resource.
@@ -40,8 +50,8 @@ class InstrumentsController extends Controller
     public function store(Request $request)
     {
         $selected_bpm=$request->input('selected_bpm');
-        $selected_Chord=$request->input('exampleRadios');
-        return view('instruments.index',['selected_bpm'=>$selected_bpm,
+        $selected_Chord=$request->input('selected_Chord');
+        return view('instruments.generate',['selected_bpm'=>$selected_bpm,
             'selected_Chord'=>$selected_Chord,
         ]);
 

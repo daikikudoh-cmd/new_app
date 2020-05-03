@@ -45,6 +45,7 @@
 <form action="instruments" method="POST" class="form-horizontal">
   {{ csrf_field() }}
   <div class="select_all">
+    
     <div class="bpm">
       <div class="bpm_input">
         <input type="text" name="selected_bpm" class="form-control"/>
@@ -57,16 +58,16 @@
       
     <div class="bpm">
       <div class="chrod_input">
-        <select name="example2" size="1" class="form-control">
-        <option value="">王道進行</option>
-        <option value="選択肢2">just the two of us 進行</option>
-        <option value="選択肢3">4156進行</option>
-        <option value="選択肢4">カノン進行</option>
-        <option value="選択肢5">小室進行</option>
-        <option value="選択肢6">レット・イット・ビー進行</option>
-        <option value="選択肢7">1625進行</option>
-        <option value="選択肢7">6415進行</option>
-        <option value="選択肢7">3456進行</option>
+        <select name="selected_Chord" size="1" class="form-control">
+        <option value="FーGーEmーAm">王道進行</option>
+        <option value="FM7ーE7ーAm7ーC7">just the two of us 進行</option>
+        <option value="FーCーGーAm">4156進行</option>
+        <option value="CーGーAmーEmーFーCーFーG">カノン進行</option>
+        <option value="AmーFーGーC">小室進行</option>
+        <option value="CーGーAmーF">レット・イット・ビー進行</option>
+        <option value="CーAm7ーDm7ーG7">1625進行</option>
+        <option value="AmーFーCーG">6415進行</option>
+        <option value="EmーFーGーAm">3456進行</option>
         </select>
         </div>
       <lavel>Select the Chrod</lavel>
@@ -255,6 +256,5 @@
 
 
 
-<script src="{{ asset('/js/index.js') }}"></script>
 
 @endsection

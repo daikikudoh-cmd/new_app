@@ -1,0 +1,163 @@
+html {
+    height: 100%;
+}
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    /*background: #f9f8e9;*/
+    background-image: url("./wall.png");
+}
+main {
+    /*position: absolute;*/
+    /*top: 200px;*/
+    /*left: 50%;*/
+    /*transform: translateX(-50%) translateY(-50%);*/
+    width: 400px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    align-items: center;
+    background-color: rgba(255,255,255,.9);
+    border-radius: 3px;
+    box-shadow: 0 1px 10px rgba(0,0,0,.2);
+    text-align:center;
+    margin:0 auto;
+}
+h1 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #31494e;
+    margin-top: 0;
+}
+ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+li .button {
+    display: block;
+    text-decoration: none;
+    color: #33634f;
+    background-color: #aeefc4;
+    cursor: pointer;
+    transition: all .1s ease;
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 4px;
+}
+li .button:not(.start):not(.pause) {
+    background-color: #eee;
+    cursor: default;
+    transition: none;
+}
+.button:before {
+    display: inline;
+    text-transform: capitalize;
+}
+.button.start:before {
+    content: "start"
+}
+.button.pause:before {
+    content: "pause"
+}
+.button:not(.start):not(.pause):before {
+    content: "...loading"
+}
+.button.start:hover,
+.button.pause:hover {
+    opacity: 0.7;
+}
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    font-size: 14px;
+    background: rgba(255,255,255,.9);
+    padding-top: 10px;
+}
+footer a {
+    color: #22b4d6;
+}
+p {
+    margin: 0;
+}
+
+
+
+
+
+.jumbotron{
+    background-image: url("../images/jumbotron.jpg");
+    margin-bottom:150px;
+  object-fit: cover; /* この一行を追加するだけ！ */
+;}
+
+.bpm{
+    width:300px;
+}
+
+.bpm lavel{
+    font-weight:bold;
+    display:block;
+    text-align:center;
+}
+
+.bpm .bpm_input{
+    text-align:center;
+}
+
+.select_all{
+  display: flex;
+  justify-content: space-between; /* live sample で変更可能 */
+}
+
+select.form-control[size]{    
+    height:calc(2.25rem + 2px);
+}
+
+
+select.form-control[size]{    
+    height:calc(2.25rem + 2px);
+}
+
+
+form{
+    margin-bottom:150px;
+}
+
+.btn-secondary{
+    display:block;
+    margin:0 auto;
+    margin-top:150px;
+}
+
+.w-75{
+    text-align:center;
+}
+.card{
+    margin:0 auto;
+    margin-bottom:30px;
+}
+
+.card-body{
+    display:flex;
+    justify-content:space-around;
+    font-weight:bold;
+}
+
+.card-body p{
+    margin-top:20px;
+}
+
+.card-body div span{
+    margin-top:30px;
+}
+
+
