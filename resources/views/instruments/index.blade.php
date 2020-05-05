@@ -1,16 +1,16 @@
 @extends('layouts.app')
 @section('content')
-<link rel="stylesheet" href="{{ asset('css/index.css') }}">
+<link rel="stylesheet" href="css/index.css">
 
 <div class="container">
 
 <nav class="navbar navbar-light ">
   <a class="navbar-brand" href="#">Navbar</a>
-  
+
   <ul class="nav justify-content-end">
-  
-  
-  
+
+
+
   <li class="nav-item">
     <a class="nav-link active" href="#">Active</a>
   </li>
@@ -40,12 +40,12 @@
 
 
 <div class="container">
-  
+
 
 <form action="instruments" method="POST" class="form-horizontal">
   {{ csrf_field() }}
   <div class="select_all">
-    
+
     <div class="bpm">
       <div class="bpm_input">
         <input type="text" name="selected_bpm" class="form-control"/>
@@ -53,9 +53,9 @@
       <lavel>Select the BPM</lavel>
       <p>Class aptent taciti sociosqu ad litora torquent per conubia, per inceptos himenaeos.</p>
       </div>
-      
-      
-      
+
+
+
     <div class="bpm">
       <div class="chrod_input">
         <select name="selected_Chord" size="1" class="form-control">
@@ -73,9 +73,9 @@
       <lavel>Select the Chrod</lavel>
       <p>Class aptent taciti sociosqu ad litora torquent per conubia, per inceptos himenaeos.</p>
       </div>
-      
-      
-      
+
+
+
     <div class="bpm">
       <div class="scale_input">
         <select name="example2" size="1" class="form-control">
@@ -134,11 +134,11 @@
   <button type="submit" name="add" class="btn btn-secondary">
    GENERATE
   </button>
-</form>  
-  
-  
-  
-  
+</form>
+
+
+
+
 </div>
 
 
@@ -158,8 +158,8 @@
     <!--        <li><a id="button" class="button" href="javascript:;"></a></li>-->
     <!--    </ul>-->
     <!--</main>-->
-    
-    
+
+
 
 
 
@@ -169,7 +169,7 @@
 <p id="selected_bpm">
     <?#phpprint $selected_bpm==NULL ? 120 : $selected_bpm?>
     </p>
-    
+
 <p id="selected_Chord">
     <?#phpprint $selected_Chord==NULL ? "piano1" : $selected_Chord?>
     </p>
@@ -179,7 +179,7 @@
 <div class="container">
   <h4>投稿一覧</h4>
   <hr>
-  
+
     <div class="card w-75">
       <div class="card-body">
         <div>
@@ -196,7 +196,7 @@
         </div>
       </div>
     </div>
-    
+
     <div class="card w-75">
       <div class="card-body">
         <div>
@@ -213,7 +213,7 @@
         </div>
       </div>
     </div>
-    
+
     <div class="card w-75">
       <div class="card-body">
         <div>
@@ -230,8 +230,8 @@
         </div>
       </div>
     </div>
-  
-  
+
+
 </div>
 
 

@@ -1,16 +1,16 @@
 @extends('layouts.app')
 @section('content')
-<link rel="stylesheet" href="{{ asset('css/generate.css') }}">
+<link rel="stylesheet" href="css/generate.css">
 
 <div class="container">
 
 <nav class="navbar navbar-light ">
   <a class="navbar-brand" href="#">Navbar</a>
-  
+
   <ul class="nav justify-content-end">
-  
-  
-  
+
+
+
   <li class="nav-item">
     <a class="nav-link active" href="#">Active</a>
   </li>
@@ -35,16 +35,16 @@
     <div class="bpm">
       <div class="bpm_input">
         </div>
-      <lavel>BPM 
+      <lavel>BPM
         <p id="selected_bpm">
-          <?php print $selected_bpm==NULL ? 120 : $selected_bpm?> 
+          <?php print $selected_bpm==NULL ? 120 : $selected_bpm?>
           </p>
           </lavel>
       <p>Class aptent taciti sociosqu ad litora torquent per conubia, per inceptos himenaeos.</p>
       </div>
-      
-      
-      
+
+
+
     <div class="bpm">
       <div class="chrod_input">
         </div>
@@ -55,9 +55,9 @@
         </lavel>
       <p>Class aptent taciti sociosqu ad litora torquent per conubia, per inceptos himenaeos.</p>
       </div>
-      
-      
-      
+
+
+
     <div class="bpm">
       <div class="scale_input">
         </div>
@@ -77,7 +77,7 @@
             <li><a id="button" class="button" href="javascript:;"></a></li>
         </ul>
     </main>
-    
+
 
 
 
