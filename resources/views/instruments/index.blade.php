@@ -2,6 +2,12 @@
 @section('content')
 <link rel="stylesheet" href="css/index.css">
 
+
+
+
+
+
+
 <div class="container">
 
 <nav class="navbar navbar-light ">
